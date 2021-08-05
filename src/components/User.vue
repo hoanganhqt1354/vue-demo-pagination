@@ -1,0 +1,17 @@
+<template>
+  <article class='card'>
+    <img :src="user.avatar_url" :alt="user.login" />
+    <h4>{{ user.login }}</h4>
+    <a :href="user.html_url" class='btn'>
+      view profile
+    </a>
+  </article>
+</template>
+<script>
+export default {
+  props: ['user']  
+}
+</script>
+<style lang="">
+    
+</style>
